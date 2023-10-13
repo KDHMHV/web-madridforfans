@@ -1,0 +1,353 @@
+* {
+    padding:0;
+    margin:0;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color: white;
+}
+
+header {
+    height: 70px;
+}
+
+.logo {
+    width: 40px;
+    height: auto;
+    padding: 6px;
+    display: inline-block;
+    float: left;
+}
+
+header h1 {
+    display: inline-block;
+    float: left;
+    padding: 17px 10px;
+    text-transform: uppercase;
+}
+
+header h1 a {
+    transition: .3s;
+}
+
+header h1 a:hover {
+    color: #4FB4FF ;
+}
+
+header ul { 
+    float: right;
+
+}
+
+header ul li {
+    padding: 24px;
+    display: inline-block;
+} 
+
+header ul li a {
+    transition: .3s;
+}
+
+header ul li a:hover {
+    color: #4FB4FF;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+.container-content {
+    background-color: black;
+}
+
+.container::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.mobile-menu {
+    float: right;
+    display: none;
+    padding: 18px; 
+}
+.mobile-menu:hover {
+    cursor: pointer;
+}
+#check {
+    display: none;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -300px;
+    width: 300px;
+    background-color: rgba(28, 40, 51, .9);
+    transition: .3s;
+    z-index: 9999;
+}
+
+.sidebar ul li a {
+    color: #fff;
+}
+.sidebar ul li {
+    padding: 24px;
+    transition: .3s;
+    transition-property: background-color;
+}
+.sidebar ul li:hover {
+    background-color: #7B7D7D  ;
+}
+#check:checked ~ .sidebar {
+    left: 0;
+}
+
+/* Bagian Banner Mulai */
+.banner {
+    background-image: url('ancelotti.gif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding: 355px 0;
+}
+
+section {
+    padding: 50px 0;
+}
+
+.banner h2,
+.banner p,
+.banner span {
+    color: #fff;
+}
+.banner h2 {
+    margin-bottom: 10px;
+}
+.banner p {
+    font-size: 19px;
+}
+.banner-left{
+    padding-left: 24px;
+}
+
+section h3 {
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 20px;
+    position: relative;
+}
+section h3::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 120px;
+    height: 1px;
+    background-color: white;
+    left: calc(50% - 60px);
+}
+
+section h3::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    width: 40px;
+    height: 5px;
+    background-color: white;
+    left: calc(50% - 20px);
+}
+
+/* Button */
+.btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: #eee;
+    font-weight: 500;
+
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 100px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.container .btn {
+    background-color: #fdb164;
+}
+
+.container .grid img {
+    width: 300px;
+    height: 365px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+.konten{
+    margin: 30px;
+    width: 50%;
+}
+
+.grid{
+    display: grid;
+    margin: 20px;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.grid > article{
+    box-shadow: 5px 5px 5px 0px white;
+    border-radius: 20px;
+    background: #ffc161;
+    width: 300px;
+}
+
+.container .grid1 img {
+    width: 300px;
+    height: 365px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.grid1{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 15px;
+    padding-left: 1%;
+    margin: 20px;
+    justify-content: center;
+    align-content: center;
+}
+
+.grid1 > article{
+    box-shadow: 5px 5px 5px 0px white;
+    border-radius: 20px;
+    background: #ffc161;
+    width: 300px;
+}
+
+.container .grid2 img {
+    width: 300px;
+    height: 365px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.grid2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding-left: 7.5%;
+    margin: 20px;
+    grid-gap: 5px;
+    justify-content: center;
+    align-content: center;
+}
+
+.grid2 > article{
+    box-shadow: 5px 5px 5px 0px white;
+    border-radius: 20px;
+    background: #ffc161;
+    width: 300px;
+}
+
+
+.col-3 {
+    width: 33.33%;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    padding: 50px 10px;
+}
+.col-3 h4 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+    margin-bottom: 15px;
+}
+
+.gotopbtn{
+    position: fixed;
+    background-color: #ffc161;
+    width: 50px;
+    height: 50px;
+    bottom: 25px;
+    left: 30px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+footer {
+    background-color: #333;
+    padding: 50px;
+    text-align: center;
+}
+footer small {
+    color: #fff;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
+#Contact {
+    background-color: black;
+}
+
+
+@media (max-width: 1500px){
+    .grid1{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .grid2{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media (max-width: 1257px){
+    .grid1{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .grid2{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media (max-width: 977px){
+    .grid1{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .grid2{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 650px){
+    .grid1{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .grid2{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .mobile-menu {
+        display: block;
+    }
+    header ul {
+        display: none;
+    }
+}
